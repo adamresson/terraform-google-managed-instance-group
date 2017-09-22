@@ -26,7 +26,7 @@ resource "google_compute_instance_template" "default" {
   tags = "${concat(list("allow-ssh"), var.target_tags)}"
 
   network_interface {
-    network       = "${var.subnetwork == "" ? var.network : ""}"
+    network       = "${var.network : ""}"
     access_config = ["${var.access_config}"]
     network_ip    = "${var.network_ip}"
   }
