@@ -39,11 +39,6 @@ variable network {
   default     = "default"
 }
 
-variable subnetwork {
-  description = "The subnetwork to deploy to"
-  default     = "default"
-}
-
 variable name {
   description = "Name of the managed instance group."
 }
